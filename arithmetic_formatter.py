@@ -35,9 +35,6 @@ def arithmetic_arranger(problems, show_answers=False):
         if problem[0] > problem[2]:
             biggest = 0
 
-        elif problem[0] == problem[2]:
-            biggest = both
-
         else:
             biggest = 2
 
@@ -73,7 +70,7 @@ def arithmetic_arranger(problems, show_answers=False):
 
         # Render show answer, optional.
         if show_answers == True:
-            digits = int(str(problem[biggest])) + 2
+            digits = len(str(problem[biggest])) + 2
 
             answer = None
 
@@ -81,12 +78,16 @@ def arithmetic_arranger(problems, show_answers=False):
                 answer = problem[0] + problem[2]
             
             else:
-                answer = problem[0] - problem[2]
+                if biggest == 0:
+                    answer = problem[0] - problem[2]
+
+                else:
+                    answer = problem[2] - problem[0]
             
-            
+            print(answer)
             spaces = digits - len(str(answer))
             
-            answers.append(f"{spaces}{answer}")
+            answers.append(f"{spaces * ' '}{answer}")
             
         
     # Finally, loop through all the arrays and print out the ouput side by side.
