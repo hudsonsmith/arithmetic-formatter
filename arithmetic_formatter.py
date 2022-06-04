@@ -78,11 +78,7 @@ def arithmetic_arranger(problems, show_answers=False):
                 answer = problem[0] + problem[2]
             
             else:
-                if biggest == 0:
-                    answer = problem[0] - problem[2]
-
-                else:
-                    answer = problem[2] - problem[0]
+                answer = problem[0] - problem[2]
             
             print(answer)
             spaces = digits - len(str(answer))
