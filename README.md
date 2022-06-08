@@ -1,6 +1,3 @@
-# Arithmetic Formatter
-
-
 <div align="center">
   
   # Arithmetic Formatter
