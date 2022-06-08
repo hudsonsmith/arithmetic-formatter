@@ -29,7 +29,6 @@ def arithmetic_arranger(problems, show_answers=False):
         # If the interpreter is still parsing, the problem must be valid.
 
         # Step 1: Find the biggest number.
-        both = "both"
         biggest = None
         
         if problem[0] > problem[2]:
