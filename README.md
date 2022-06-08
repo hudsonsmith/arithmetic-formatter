@@ -45,5 +45,5 @@ cd arithmetic_formatter
 Once cloned, run main.py.
 
 ```bash
-main.py
+python3 main.py
 ```
