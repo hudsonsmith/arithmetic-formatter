@@ -2,7 +2,7 @@
   
   # Arithmetic Formatter
   
-  <img src="https://github.com/hudsonsmith/arithmetic-formatter/blob/main/logo.png?raw=true" width="256" height="256" />
+  <img src="https://github.com/hudsonsmith/arithmetic_formatter/blob/main/logo.png?raw=true" width="256" height="256" />
   
   ![MIT LICENSE](https://img.shields.io/badge/LICENSE-MIT-success)
 
@@ -34,8 +34,8 @@ I took the solution code and integrated it with user input to create an arithmet
 1. Clone the repo.
 
 ```bash
-git clone https://github.com/hudsonsmith/arithmetic-formatter.git
-cd arithmetic-formatter
+git clone https://github.com/hudsonsmith/arithmetic_formatter.git
+cd arithmetic_formatter
 ```
 
 ---
