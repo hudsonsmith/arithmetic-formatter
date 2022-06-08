@@ -80,7 +80,6 @@ def arithmetic_arranger(problems, show_answers=False):
             else:
                 answer = problem[0] - problem[2]
             
-            print(answer)
             spaces = digits - len(str(answer))
             
             answers.append(f"{spaces * ' '}{answer}")
@@ -89,23 +88,38 @@ def arithmetic_arranger(problems, show_answers=False):
     # Finally, loop through all the arrays and print out the ouput side by side.
     formatted_questions = ""
     
-    for line in tops:
-        formatted_questions += f"{line}    "
+    for i, line in enumerate(tops):
+        if i == len(tops) - 1:
+            formatted_questions += f"{line}\n"
 
-    formatted_questions += "\n"
+        else:
+            formatted_questions += f"{line}    "
+
     
-    for line in bottoms:
-        formatted_questions += f"{line}    "
+    for i, line in enumerate(bottoms):
+        if i == len(bottoms) - 1:
+            formatted_questions += f"{line}\n"
+
+        else:
+            formatted_questions += f"{line}    "
+
     
-    formatted_questions += "\n"
-    
-    for line in banners:
-        formatted_questions += f"{line}    "
+    for i, line in enumerate(banners):
+        if i == len(banners) - 1:
+            formatted_questions += f"{line}"
+
+        else:
+            formatted_questions += f"{line}    "
+
     
     if show_answers == True:
         formatted_questions += "\n"
 
-        for line in answers:
-            formatted_questions += f"{line}    "
-
+        for i, line in enumerate(answers):
+            if i == len(answers) - 1:
+                formatted_questions += f"{line}"
+    
+            else:
+                formatted_questions += f"{line}    "
+    
     return formatted_questions
